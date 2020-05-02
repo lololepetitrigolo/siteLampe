@@ -19,12 +19,20 @@ div{
 }
 
 @media (max-width: 1081px){
+  body{
+    text-align: center;
+    color: white;
+    background: #24292E;
+    font-size: 5em;
+  }
+
   form{
     width: 100%;
   }
 
   input{
     width: 80%;
+    height: 5em;
     margin-top: 15px;
   }
 
