@@ -18,6 +18,14 @@ div{
   margin-left: 50%;
 }
 
+#bouton{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: #04B404;
+  border-radius: 20px;
+}
+
 @media (max-width: 1081px){
   body{
     text-align: center;
@@ -38,5 +46,13 @@ div{
 
   div{
     margin-left: 0;
+  }
+  #bouton{
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: #04B404;
+    border-radius: 20px;
   }
 }
