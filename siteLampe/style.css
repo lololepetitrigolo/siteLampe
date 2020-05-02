@@ -1,0 +1,34 @@
+body{
+  text-align: center;
+  color: white;
+  background: #24292E;
+}
+
+form{
+  width: 66%;
+}
+
+input{
+  width: 33%;
+  margin: 15px;
+  margin-left: auto;
+}
+
+div{
+  margin-left: 50%;
+}
+
+@media (max-width: 1081px){
+  form{
+    width: 100%;
+  }
+
+  input{
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  div{
+    margin-left: 0;
+  }
+}
