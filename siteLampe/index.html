@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lampe</title>
+  </head>
+  <body>
+
+    <form action="https://api.thingspeak.com/update" method="post" target="_blank" >
+  <div>
+    <label for="api_key">api_key</label>
+    <input name="api_key" id="api_key" value="0KOKL2XWUDT2GGT1">
+  </div>
+  <div>
+    <label for="field1">Rouge</label>
+    <input type="range" min="0" max="255" step="1" name="field1">
+  </div>
+  <div>
+    <label for="field2">Vert</label>
+    <input type="range" min="0" max="255" step="1" name="field2">
+  </div>
+  <div>
+    <label for="field3">Bleu</label>
+    <input type="range" min="0" max="255" step="1" name="field3">
+  </div>
+  <div>
+    <label for="field4">Luminosité</label>
+    <input type="range" min="0" max="100" step="1" name="field4">
+  </div>
+  <div>
+    <label for="field5">Modes</label>
+    <input name="field5" value="10">
+  </div>
+  <div>
+    <button>Send data</button>
+  </div>
+</form>
+  </body>
+</html>
