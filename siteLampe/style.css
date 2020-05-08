@@ -110,6 +110,16 @@ form {
     background-color: yellow;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    height: 8vh;
+  }
+  #boutonAnimer {
+    position: static;
+    font-size: 1em;
+    z-index: -1;
+    background-color: yellow;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 10px solid #24292e;
     animation: monterBouton 15s linear;
     height: 8vh;
   }

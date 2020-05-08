@@ -30,10 +30,14 @@ window.addEventListener("load", function () {
       console.log(event.target.responseText);
       if (event.target.responseText == 0) {
         const chargement = document.getElementById("chargement");
+        const bouton = document.getElementById("bouton");
         chargement.id = "chargementAnimer";
+        bouton.id = "boutonAnimer";
       } else {
         const chargement = document.getElementById("chargementAnimer");
+        const bouton = document.getElementById("boutonAnimer");
         chargement.id = "chargement";
+        bouton.id = "bouton";
       }
     });
 
