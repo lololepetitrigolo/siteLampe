@@ -1,27 +1,39 @@
-  window.addEventListener("load", function () {
+window.addEventListener("load", function () {
   function sendData() {
     var XHR = new XMLHttpRequest();
 
     // Liez l'objet FormData et l'élément form
     var FD = new FormData(form);
 
-    var api_key = document.getElementById('api_key').value;
-    var field1 = document.getElementById('field1').value;
-    var field2 = document.getElementById('field2').value;
-    var field3 = document.getElementById('field3').value;
-    var field4 = document.getElementById('field4').value;
-    var field5 = document.getElementById('field5').value;
-
-    var url = "https://api.thingspeak.com/update?api_key="+ api_key +"&field1="+field1+"&field2="+field2+"&field3="+field3+"&field4="+field4+"&field5="+field5;
+    var api_key = document.getElementById("api_key").value;
+    var field1 = document.getElementById("field1").value;
+    var field2 = document.getElementById("field2").value;
+    var field3 = document.getElementById("field3").value;
+    var field4 = document.getElementById("field4").value;
+    var field5 = document.getElementById("field5").value;
+    var url =
+      "https://api.thingspeak.com/update?api_key=" +
+      api_key +
+      "&field1=" +
+      field1 +
+      "&field2=" +
+      field2 +
+      "&field3=" +
+      field3 +
+      "&field4=" +
+      field4 +
+      "&field5=" +
+      field5;
 
     // Définissez ce qui se passe si la soumission s'est opérée avec succès
-    XHR.addEventListener("load", function(event) {
+    XHR.addEventListener("load", function (event) {
       console.log(event.target.responseText);
-      if (event.target.responseText==0) {
-        document.getElementById('body').style.background = "red";
-      }
-      else{
-        document.getElementById('body').style.background = "#24292E";
+      if (event.target.responseText == 0) {
+        const chargement = document.getElementById("chargement");
+        chargement.id = "chargementAnimer";
+      } else {
+        const chargement = document.getElementById("chargementAnimer");
+        chargement.id = "chargement";
       }
     });
 
@@ -40,7 +52,6 @@
   // … et prenez en charge l'événement submit.
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-
     sendData();
   });
 });
